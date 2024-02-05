@@ -1,0 +1,68 @@
+/* Calendar.css */
+
+.calendar {
+  width: 80%;
+  margin: 5% auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-label {
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.day {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.empty {
+  background-color: #f9f9f9;
+}
+
+/* Optional: Style for highlighting the current day */
+.day.current-day {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.between-dates {
+  background-color: #81689D !important; /* Set your desired background color */
+  color: #333; /* Set your desired text color */
+}
+
+.target-date {
+  border: 4px solid red;
+  padding: 5px;
+  box-sizing: border-box;
+}
